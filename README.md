@@ -9,8 +9,15 @@ sudo wget https://github.com/mikefarah/yq/releases/download/${VERSION}/${BINARY}
 sudo chmod +x /usr/local/bin/yq
 ```
 
-Fix yml files:
+Fix `.yml` files:
 ```bash
 find . -type f -name '*.yml' -exec \
   bash -c 'yq e -i {}' \;
+```
+
+
+```bash
+find . -type f -name '*.yml' -exec sed -i '' '1i\
+---
+' {} +
 ```
