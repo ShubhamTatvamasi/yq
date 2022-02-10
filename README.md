@@ -9,6 +9,12 @@ sudo wget https://github.com/mikefarah/yq/releases/download/${VERSION}/${BINARY}
 sudo chmod +x /usr/local/bin/yq
 ```
 
+Quick fix yaml file:
+```bash
+yq e -i galaxy.yml
+```
+
+
 Fix `.yml` files:
 ```bash
 find . -type f -name '*.yml' -exec \
