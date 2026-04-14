@@ -1,5 +1,14 @@
 # yq
 
+
+CentOS 9
+
+```bash
+sudo dnf install -y yq
+```
+
+---
+
 Install yq:
 ```bash
 VERSION=$(curl -s https://github.com/mikefarah/yq/releases/latest | grep -o "v[0-9]\.[0-9]*\.[0-9]*")
